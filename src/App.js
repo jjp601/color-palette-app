@@ -1,9 +1,11 @@
-import './App.css';
+import React from 'react';
+import Palette from './components/Palette';
+import seedColors from './utils/seedColors';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
+    <div>
+      <Palette {...seedColors[4]} />
     </div>
   );
 }
